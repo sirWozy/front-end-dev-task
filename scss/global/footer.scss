@@ -1,0 +1,68 @@
+.bg-black{
+  background-color: var(--black-bg-color);
+}
+footer{
+  display: flex;
+  padding: 64px 112px;
+  width: 100%;
+  @include mq("tablet"){
+    padding: 64px 0;
+  }
+  @include mq("mobile"){
+    flex-direction: column;
+    padding: 40px 0;
+  }
+  display: flex;
+  justify-content: space-between;
+  .footer-left{
+    display: flex;
+    flex-direction: column;
+    &-links{
+      font-size: var(--font-size-sm);
+      color: var(--secondary-color);
+      font-weight: 400;
+      line-height: 24px;
+      margin-top: 24px;
+      &-top{
+        margin-bottom: 12px;
+      }
+      &-bottom{
+        a{
+          @include mq("mobile"){
+            margin-bottom: 12px;
+          }
+        }
+      }
+      a{
+        margin-right: 24px;
+      }
+    }
+    &-copyright{
+      font-size: var(--font-size-xs);
+      color: var(--text-color);
+      margin-top: 24px;
+      @include mq("mobile"){
+        margin-top: 12px;
+      }
+    }
+  }
+  .footer-download-badges{
+    @include mq("mobile"){
+      margin-top: 32px;
+    }
+    &-title{
+      font-size: var(--font-size-md);
+      color: var(--text-color);
+      font-weight: 500;
+      line-height: 28px;
+      margin-bottom: 16px;
+    }
+    &-logos{
+      display: flex;
+      flex-direction: column;
+      svg{
+        margin-bottom: 16px;
+      }
+    }
+  }
+}

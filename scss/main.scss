@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@import "config/variable.scss";
+@import "config/mixin.scss";
+//
+@import "helper/normalize.scss";
+@import "helper/formalize.scss";
+@import "helper/global.scss";
+//
+@import "global/header.scss";
+@import "global/buttons.scss";
+@import "global/footer.scss";
+//
+@import "sections/showcase.scss";
+@import "sections/clients.scss";
+@import "sections/features.scss";
+@import "sections/customer-stories.scss";
+
+
+

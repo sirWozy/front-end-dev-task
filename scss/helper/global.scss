@@ -1,0 +1,55 @@
+html {
+  position: relative;
+}
+body {
+  font-family: var(--font-family);
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
+.container {
+  width: 100%;
+  @include mq('tablet') {
+    padding: 0 40px 0 40px;
+  }
+  @include mq('mobile') {
+    padding: 0 20px 0 20px;
+  }
+}
+.bg-image {
+  background-image: url('/img/background-desktop.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  @include mq('tablet') {
+    background-image: url('/img/background-tablet.png');
+  }
+  @include mq('mobile') {
+    background-image: url('/img/background-mobile.png');
+  }
+}
+
+.container > section,
+.container > footer,
+.container > header {
+  max-width: var(--max-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  transition: 0.15s;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}

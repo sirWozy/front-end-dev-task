@@ -1,0 +1,27 @@
+.button{
+  font-size: var(--font-size-sm);
+  color: var(--secondary-color);
+  padding: 16px 20px;
+  border-radius: var(--border-radius);
+  display: inline-flex;
+  align-items: center;
+  font-weight: 600;
+  transition: .3s;
+  height: 56px;
+  svg{
+    margin-right: 10px;
+  }
+  &-primary{
+    background-color: var(--primary-color);
+    &:hover{
+      background-color: var(--primary-hover-color);
+    }
+  }
+  &-secondary{
+    color: var(--primary-color);
+    background: transparent;
+    &:hover{
+      background-color: var(--secondary-hover-color);
+    }
+  }
+}

@@ -1,0 +1,19 @@
+:root {
+  --max-width: 1440px;
+  --container-width: 1216px;
+  --border-radius: 8px;
+  --primary-color: #7C3AED;
+  --secondary-color: #FFFFFF;
+  --green-bg-color: #D5FAFC;
+  --blocquote-color: #1DB5BE;
+  --primary-text-color: #111827;
+  --secondary-text-color: #374151;
+  --text-color: #D1D5DB;
+  --font-family: 'Inter', sans-serif;
+  --font-size-xs: 14px;
+  --font-size-sm: 16px;
+  --font-size-md: 18px;
+  --font-size-lg: 48px;
+  --font-size-xl: 60px;
+}
+/*# sourceMappingURL=variable.css.map */
